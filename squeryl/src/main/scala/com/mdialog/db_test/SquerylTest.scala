@@ -22,6 +22,7 @@ object SquerylTest
 				println("Name: " + v.name.toString + ", created: " + v.created_at.toString);
 			}
 		}
+		transaction { printDdl(println(_)); }
 	}
 }
 
